@@ -1,78 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Lillith</title>
+  <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>A noite estava fria e quieta, e o caminho para casa parecia mais longo do que nunca. Você estava absorto em seus próprios pensamentos, tentando organizar as emoções que havia deixado para trás durante o dia. Foi então que viu a casa pela primeira vez.</p>
-          <p>Ela sempre foi uma lenda entre os moradores da região, mas você nunca havia dado muita atenção às histórias. Mas naquela noite, algo era diferente. A casa parecia... viva. Uma luz suave, quase etérea, brilhava através da janela. Algo te puxava até lá.</p>
-          <p>A porta estava entreaberta.</p>
-          <p> Você hesita por um momento. Não pode ser verdade. Não pode ser o que você está pensando. Mas, antes que pudesse decidir, seus pés já estavam se movendo na direção da casa.</p>
-          <button class="btn-proximo" data-proximo="00">Continuar</button>
-        </div>
-        <div class="passo" id="passo-00">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>Ao entrar na casa, um silêncio profundo toma conta de você. A poeira no ar parece contar histórias de tempos esquecidos. Você sente um frio súbito, e a sensação de estar sendo observado te invade. Então, uma figura aparece: Lillith</p>
-          <p>Seus olhos são de um preto como um abismo, quase sobrenatural. Ela sorri, mas é um sorriso que mistura tristeza e algo mais, algo que você não consegue identificar.</p>
-          <p>Ela te olha com uma expressão que parece querer dizer algo, mas as palavras não vêm. O que você faz?</p>
-          <button class="btn-proximo" data-proximo="1">"Você está bem?"</button>
-          <button class="btn-proximo" data-proximo="2">"Você não deveria estar aqui…"</button>
-        </div>
-        <div class="passo" id="passo-1">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>Lillith parece surpresa com sua pergunta, como se ninguém nunca tivesse se importado o suficiente para perguntar. Ela respira fundo, como se guardasse um segredo há muito tempo.</p>
-          <p>"Eu… não sei", ela responde suavemente. "Estou presa aqui, mas também não quero sair."</p>
-          <p>Sua voz tremula um pouco. Você sente que ela não está falando apenas sobre a casa. Está falando sobre algo mais profundo, algo além de qualquer explicação lógica. O que você faz? </p>
-          <button class="btn-proximo" data-proximo="11">“O que te prendeu aqui?”</button>
-          <button class="btn-proximo" data-proximo="12">“Eu não posso ajudar.”</button>
-        </div>
-        <div class="passo" id="passo-2">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>As palavras saem quase sem querer, como se algo dentro de você soubesse mais do que deveria. Lillith não parece surpresa, mas uma tristeza profunda passa por seu olhar.</p>
-          <p>"Eu sei", ela diz com voz tão suave que quase não é ouvida. "Aqui, eu… não posso sair. E você, talvez, também não."</p>
-          <p>Você sente que há algo entre vocês que vai além do que pode compreender. Mas, ao mesmo tempo, o medo começa a crescer. O que você faz?</p>
-          <button class="btn-proximo" data-proximo="21">"Eu não vou ficar aqui."</button>
-          <button class="btn-proximo" data-proximo="22">“Talvez eu possa ajudar.”</button>
-        </div>
-        <div class="passo" id="passo-11">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>Lillith olha para o chão, claramente hesitante, como se lutasse contra algo.</p>
-          <p>"Eu fiz um erro", ela diz finalmente, a voz carregada de culpa. "A casa… ela me aprisionou. E precisa de um sacrifício para liberar alguém. Pensei que seria eu, mas a casa quer mais."</p>
-          <p>Você sente um peso no peito, como se algo estivesse prestes a acontecer. E, ao mesmo tempo, há uma vontade de ajudar. O que você faz?</p>
-          <button class="btn-proximo" data-proximo="111">"Você precisa me contar mais."</button>
-          <button class="btn-proximo" data-proximo="112">"Eu vou fazer o que for necessário."</button>
-        </div>
-       <div class="passo" id="passo-12">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>O desconforto é forte, mas a curiosidade permanece. Lillith te observa com uma expressão que mistura dor e esperança.</p>
-          <p>Ela diz: "Se não me ajudar, talvez nunca possamos sair daqui."</p>
-          <p>Você percebe que a decisão está em suas mãos.O que você faz?</p>
-          <button class="btn-proximo" data-proximo="121">"Talvez eu esteja certo em tentar."</button>
-          <button class="btn-proximo" data-proximo="122">"Eu preciso sair daqui." </button>
-        </div>
-        <div class="passo" id="passo-21">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>Você tenta fugir, mas portas e janelas não abrem. Lillith se aproxima novamente com aquele sorriso triste</p>
-          <p>"Ninguém sai dessa casa", ela diz. E você percebe que está preso.</p>
-          <p>O que você faz?</p>
-          <button class="btn-proximo" data-proximo="211">"Me conte sua história."</button>
-          <button class="btn-proximo" data-proximo="212">"Eu não vou ficar."</button>
-        </div>
-       <div class="passo" id="passo-22">
-            <img class="img01" src="./casa.jpg" alt="">
-          <p>Você sente uma conexão crescente com Lillith. Ela te olha com esperança e medo.</p>
-          <p>"Se ficar comigo, talvez possamos quebrar a maldição", ela sussurra.</p>
-          <p>O que você faz?</p>
-          <button class="btn-proximo" data-proximo="221">"Vou ficar e tentar ajudar." </button>
-          <button class="btn-proximo" data-proximo="222">"Preciso saber mais antes de decidir." </button>
-        </div>
-      </main>
-    <script src="./main.js"></script>
+  <main>
+    <div class="passo ativo" id="passo-0">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>A noite estava fria e quieta, e o caminho para casa parecia mais longo do que nunca...</p>
+      <p>Você vê uma casa antiga, envolta em névoa. A porta está entreaberta.</p>
+      <button class="btn-proximo" data-proximo="00">Continuar</button>
+    </div>
+
+    <div class="passo" id="passo-00">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Ao entrar, o ar é pesado. Uma figura aparece — Lillith.</p>
+      <p>Ela te observa, com olhos negros como um abismo.</p>
+      <button class="btn-proximo" data-proximo="1">"Você está bem?"</button>
+      <button class="btn-proximo" data-proximo="2">"Você não deveria estar aqui..."</button>
+    </div>
+
+    <div class="passo" id="passo-1">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"Estou presa aqui", ela diz. "Mas talvez eu não queira sair."</p>
+      <button class="btn-proximo" data-proximo="11">"O que te prendeu aqui?"</button>
+      <button class="btn-proximo" data-proximo="12">"Eu não posso ajudar."</button>
+    </div>
+
+    <div class="passo" id="passo-2">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"Aqui, ninguém sai", ela sussurra. "Talvez você também não possa."</p>
+      <button class="btn-proximo" data-proximo="21">"Eu não vou ficar aqui."</button>
+      <button class="btn-proximo" data-proximo="22">"Talvez eu possa ajudar."</button>
+    </div>
+
+    <div class="passo" id="passo-11">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"A casa me prendeu", ela confessa. "E quer um sacrifício."</p>
+      <button class="btn-proximo" data-proximo="111">"Você precisa me contar mais."</button>
+      <button class="btn-proximo" data-proximo="final1">"Eu vou fazer o que for necessário."</button>
+    </div>
+
+    <div class="passo" id="passo-12">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"Se não me ajudar, talvez nunca saiamos daqui."</p>
+      <button class="btn-proximo" data-proximo="final2">"Talvez eu esteja certo em tentar."</button>
+      <button class="btn-proximo" data-proximo="final3">"Eu preciso sair daqui."</button>
+    </div>
+
+    <div class="passo" id="passo-21">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Você tenta fugir. Nenhuma porta abre. Lillith sorri tristemente.</p>
+      <button class="btn-proximo" data-proximo="final4">"Me conte sua história."</button>
+      <button class="btn-proximo" data-proximo="final5">"Eu não vou ficar."</button>
+    </div>
+
+    <div class="passo" id="passo-22">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"Se ficar comigo, talvez quebremos a maldição", ela sussurra.</p>
+      <button class="btn-proximo" data-proximo="final6">"Vou ficar e tentar ajudar."</button>
+      <button class="btn-proximo" data-proximo="final7">"Preciso saber mais antes de decidir."</button>
+    </div>
+
+    <!-- FINAIS -->
+    <div class="passo" id="passo-final1">
+      <h2>Final 1 — O Sacrifício</h2>
+      <p>Você se entrega no lugar de Lillith. A casa se cala, mas você desaparece com ela.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final2">
+      <h2>Final 2 — A Ilusão</h2>
+      <p>Você tenta ajudar, mas descobre tarde demais que tudo era uma armadilha da casa.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final3">
+      <h2>Final 3 — A Fuga</h2>
+      <p>Você foge e deixa Lillith para trás... mas algo dentro de você fica preso lá.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final4">
+      <h2>Final 4 — A Verdade</h2>
+      <p>Lillith conta que você também já esteve ali antes. A casa se repete. Você se lembra.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final5">
+      <h2>Final 5 — O Silêncio</h2>
+      <p>Você se recusa a ficar. A casa fecha as portas. Tudo fica escuro.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final6">
+      <h2>Final 6 — Unidos na Maldição</h2>
+      <p>Você e Lillith ficam juntos, presos para sempre, mas em paz.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final7">
+      <h2>Final 7 — A Escolha</h2>
+      <p>Você hesita por tempo demais. A casa decide por você.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
 </body>
 </html>
