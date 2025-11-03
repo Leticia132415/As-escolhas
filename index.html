@@ -1,112 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Casa de Lillith</title>
-  <link rel="stylesheet" href="./estilo.css">
+  <link rel="stylesheet" href="./estilo.css" />
 </head>
 <body>
   <main>
+    <!-- INÍCIO -->
     <div class="passo ativo" id="passo-0">
       <img class="img01" src="./casa.jpg" alt="">
       <p>A noite estava fria e quieta, e o caminho para casa parecia mais longo do que nunca...</p>
-      <p>Você vê uma casa antiga, envolta em névoa. A porta está entreaberta.</p>
       <button class="btn-proximo" data-proximo="00">Continuar</button>
     </div>
 
     <div class="passo" id="passo-00">
       <img class="img01" src="./casa.jpg" alt="">
-      <p>Ao entrar, o ar é pesado. Uma figura aparece — Lillith.</p>
-      <p>Ela te observa, com olhos negros como um abismo.</p>
+      <p>Ao entrar, um silêncio pesado envolve tudo. Uma figura aparece: Lillith.</p>
       <button class="btn-proximo" data-proximo="1">"Você está bem?"</button>
-      <button class="btn-proximo" data-proximo="2">"Você não deveria estar aqui..."</button>
+      <button class="btn-proximo" data-proximo="2">"Você não deveria estar aqui…"</button>
     </div>
 
+    <!-- RAMO 1 -->
     <div class="passo" id="passo-1">
       <img class="img01" src="./casa.jpg" alt="">
-      <p>"Estou presa aqui", ela diz. "Mas talvez eu não queira sair."</p>
+      <p>"Eu… não sei", ela responde. "Estou presa aqui, mas também não quero sair."</p>
       <button class="btn-proximo" data-proximo="11">"O que te prendeu aqui?"</button>
       <button class="btn-proximo" data-proximo="12">"Eu não posso ajudar."</button>
     </div>
 
+    <div class="passo" id="passo-11">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"A casa me aprisionou. Precisa de um sacrifício."</p>
+      <button class="btn-proximo" data-proximo="111">"Você precisa me contar mais."</button>
+      <button class="btn-proximo" data-proximo="112">"Eu vou fazer o que for necessário."</button>
+    </div>
+
+    <!-- passo-111 divide entre dois finais -->
+    <div class="passo" id="passo-111">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Ela conta memórias tortas e você sente a verdade cortando a pele.</p>
+      <button class="btn-proximo" data-proximo="final4">"Descobrir tudo — diga." (Ir ao FIM 4)</button>
+      <button class="btn-proximo" data-proximo="final6">"Ficar aqui com ela." (Ir ao FIM 6)</button>
+    </div>
+
+    <!-- passo-112 divide entre dois finais -->
+    <div class="passo" id="passo-112">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Um plano: libertar Lillith custará caro. Você sente o peso da escolha.</p>
+      <button class="btn-proximo" data-proximo="final1">"Sacrifício — eu faço." (Ir ao FIM 1)</button>
+      <button class="btn-proximo" data-proximo="final12">"Aceito um pacto perigoso." (Ir ao FIM 12)</button>
+    </div>
+
+    <!-- passo-12 -->
+    <div class="passo" id="passo-12">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>"Se não me ajudar, talvez nunca possamos sair daqui."</p>
+      <button class="btn-proximo" data-proximo="121">"Talvez eu esteja certo em tentar."</button>
+      <button class="btn-proximo" data-proximo="122">"Eu preciso sair daqui."</button>
+    </div>
+
+    <!-- passo-121: duas variantes -->
+    <div class="passo" id="passo-121">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Você resolve ficar e aprender a curar as feridas ocultas.</p>
+      <button class="btn-proximo" data-proximo="final10">"Cura — seguir em frente." (Ir ao FIM 10)</button>
+      <button class="btn-proximo" data-proximo="final15">"Aceitar um recomeço estranho." (Ir ao FIM 15)</button>
+    </div>
+
+    <!-- passo-122: três opções (mostra que escolhas podem ser mais que 2) -->
+    <div class="passo" id="passo-122">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Você tenta fugir, pensa, hesita. A casa observa suas dúvidas.</p>
+      <button class="btn-proximo" data-proximo="final2">"Tentar fugir agora." (Ir ao FIM 2)</button>
+      <button class="btn-proximo" data-proximo="final14">"Recusar e voltar ao início (pior). " (Ir ao FIM 14)</button>
+      <button class="btn-proximo" data-proximo="final13">"Investigar memórias antigas." (Ir ao FIM 13)</button>
+    </div>
+
+    <!-- RAMO 2 -->
     <div class="passo" id="passo-2">
       <img class="img01" src="./casa.jpg" alt="">
-      <p>"Aqui, ninguém sai", ela sussurra. "Talvez você também não possa."</p>
+      <p>"Aqui eu… não posso sair. E talvez você também não."</p>
       <button class="btn-proximo" data-proximo="21">"Eu não vou ficar aqui."</button>
       <button class="btn-proximo" data-proximo="22">"Talvez eu possa ajudar."</button>
     </div>
 
-    <div class="passo" id="passo-11">
-      <img class="img01" src="./casa.jpg" alt="">
-      <p>"A casa me prendeu", ela confessa. "E quer um sacrifício."</p>
-      <button class="btn-proximo" data-proximo="111">"Você precisa me contar mais."</button>
-      <button class="btn-proximo" data-proximo="final1">"Eu vou fazer o que for necessário."</button>
-    </div>
-
-    <div class="passo" id="passo-12">
-      <img class="img01" src="./casa.jpg" alt="">
-      <p>"Se não me ajudar, talvez nunca saiamos daqui."</p>
-      <button class="btn-proximo" data-proximo="final2">"Talvez eu esteja certo em tentar."</button>
-      <button class="btn-proximo" data-proximo="final3">"Eu preciso sair daqui."</button>
-    </div>
-
     <div class="passo" id="passo-21">
       <img class="img01" src="./casa.jpg" alt="">
-      <p>Você tenta fugir. Nenhuma porta abre. Lillith sorri tristemente.</p>
-      <button class="btn-proximo" data-proximo="final4">"Me conte sua história."</button>
-      <button class="btn-proximo" data-proximo="final5">"Eu não vou ficar."</button>
+      <p>Você tenta forçar a saída, mas as portas não abrem. Está preso.</p>
+      <button class="btn-proximo" data-proximo="211">"Me conte sua história."</button>
+      <button class="btn-proximo" data-proximo="212">"Eu não vou ficar."</button>
+    </div>
+
+    <!-- passo-211: duas opções para finais -->
+    <div class="passo" id="passo-211">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>As peças do passado se encaixam e há uma revelação sobre Lillith.</p>
+      <button class="btn-proximo" data-proximo="final11">"Revelar o mistério." (Ir ao FIM 11)</button>
+      <button class="btn-proximo" data-proximo="final5">"Guardar silêncio — aceitar ser guardião." (Ir ao FIM 5)</button>
+    </div>
+
+    <div class="passo" id="passo-212">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Você tenta resistir com tudo que tem.</p>
+      <button class="btn-proximo" data-proximo="final9">"Lutar até o fim." (Ir ao FIM 9)</button>
     </div>
 
     <div class="passo" id="passo-22">
       <img class="img01" src="./casa.jpg" alt="">
-      <p>"Se ficar comigo, talvez quebremos a maldição", ela sussurra.</p>
-      <button class="btn-proximo" data-proximo="final6">"Vou ficar e tentar ajudar."</button>
-      <button class="btn-proximo" data-proximo="final7">"Preciso saber mais antes de decidir."</button>
+      <p>Vocês se aproximam. A conexão dá medo e esperança ao mesmo tempo.</p>
+      <button class="btn-proximo" data-proximo="221">"Vou ficar e tentar ajudar." </button>
+      <button class="btn-proximo" data-proximo="222">"Preciso saber mais antes de decidir." </button>
     </div>
 
-    <!-- FINAIS -->
+    <!-- passo-221: duas saídas -->
+    <div class="passo" id="passo-221">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Vocês tentam quebrar a maldição juntos; o amor é uma arma imperfeita.</p>
+      <button class="btn-proximo" data-proximo="final3">"União que liberta." (Ir ao FIM 3)</button>
+      <button class="btn-proximo" data-proximo="final7">"Ficar juntos, para sempre." (Ir ao FIM 7)</button>
+    </div>
+
+    <!-- passo-222: dúvida que divide -->
+    <div class="passo" id="passo-222">
+      <img class="img01" src="./casa.jpg" alt="">
+      <p>Você vasculha documentos e encontra pistas que confundem tudo.</p>
+      <button class="btn-proximo" data-proximo="final16">"Perder-se na dúvida." (Ir ao FIM 16)</button>
+      <button class="btn-proximo" data-proximo="final8">"Conseguir a liberdade — de forma rara." (Ir ao FIM 8)</button>
+    </div>
+
+    <!-- ======= TODOS OS 16 FINAIS ======= -->
     <div class="passo" id="passo-final1">
-      <h2>Final 1 — O Sacrifício</h2>
-      <p>Você se entrega no lugar de Lillith. A casa se cala, mas você desaparece com ela.</p>
+      <h2>FIM 1 — O Sacrifício do Amor</h2>
+      <p>Você se oferece para salvar Lillith. A luz some. A casa cala-se com seu nome gravado nas paredes.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
 
     <div class="passo" id="passo-final2">
-      <h2>Final 2 — A Ilusão</h2>
-      <p>Você tenta ajudar, mas descobre tarde demais que tudo era uma armadilha da casa.</p>
+      <h2>FIM 2 — A Fuga Impossível</h2>
+      <p>Você tenta fugir, mas percebe que as saídas são ecos de uma liberdade perdida. O esforço vira loop.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
 
     <div class="passo" id="passo-final3">
-      <h2>Final 3 — A Fuga</h2>
-      <p>Você foge e deixa Lillith para trás... mas algo dentro de você fica preso lá.</p>
+      <h2>FIM 3 — O Amor Que Liberta</h2>
+      <p>Vocês se uniram. A maldição quebra com o som de mãos dadas — um amanhecer que cheira a chuva.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
 
     <div class="passo" id="passo-final4">
-      <h2>Final 4 — A Verdade</h2>
-      <p>Lillith conta que você também já esteve ali antes. A casa se repete. Você se lembra.</p>
+      <h2>FIM 4 — O Custo da Verdade</h2>
+      <p>Você descobre tudo. A verdade é um corte que não cicatriza: liberdade por memória perdida.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
 
     <div class="passo" id="passo-final5">
-      <h2>Final 5 — O Silêncio</h2>
-      <p>Você se recusa a ficar. A casa fecha as portas. Tudo fica escuro.</p>
+      <h2>FIM 5 — O Abraço do Esquecimento</h2>
+      <p>Você decide apagar tudo — acorda sem lembranças, mas algo observa tua calma nova.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
 
     <div class="passo" id="passo-final6">
-      <h2>Final 6 — Unidos na Maldição</h2>
-      <p>Você e Lillith ficam juntos, presos para sempre, mas em paz.</p>
+      <h2>FIM 6 — O Novo Guardião da Casa</h2>
+      <p>Lillith foi libertada, mas a casa exige guardião. Agora seu reflexo fica na janela, esperando o próximo.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
 
     <div class="passo" id="passo-final7">
-      <h2>Final 7 — A Escolha</h2>
-      <p>Você hesita por tempo demais. A casa decide por você.</p>
+      <h2>FIM 7 — O Fim da Solidão de Lillith</h2>
+      <p>Vocês permanecem juntos e tristes, mas a solidão que ela carregava finda em companhia eterna.</p>
       <button onclick="location.reload()">Recomeçar</button>
     </div>
+
+    <div class="passo" id="passo-final8">
+      <h2>FIM 8 — A Conquista da Liberdade</h2>
+      <p>De forma improvável, você encontra o que a casa teme: o perdão. A porta abre para além do que se lembrava.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final9">
+      <h2>FIM 9 — O Confronto Fatal</h2>
+      <p>Você enfrenta a entidade. Ainda que lute bravamente, o preço é sangue e silêncio nas paredes.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final10">
+      <h2>FIM 10 — A Jornada de Cura</h2>
+      <p>Curar Lillith também cura algo em você. A casa permanece, mas vocês partem diferentes — não totalmente sãos, mas livres.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final11">
+      <h2>FIM 11 — O Mistério da Morte de Lillith</h2>
+      <p>Você descobre a verdade de sua morte — traição, amor e culpa — e carrega essa história como um fardo sagrado.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final12">
+      <h2>FIM 12 — O Pacto Perigoso</h2>
+      <p>Você faz um acordo com a casa: ganha algo que desejava, mas deixa parte de si como garantia eterna.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final13">
+      <h2>FIM 13 — A Sombra do Passado</h2>
+      <p>Ao investigar memórias, percebe que já foi parte do ciclo. O espelho confirma: seu rosto é antigo na casa.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final14">
+      <h2>FIM 14 — O Retorno ao Inferno</h2>
+      <p>Tentar evitar a casa lhe reenvia a um reflexo pior — um labirinto que se alimenta de suas escolhas passadas.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final15">
+      <h2>FIM 15 — O Recomeço Inesperado</h2>
+      <p>Ao aceitar o ciclo, algo se transforma: você acorda em outra era, com uma chance estranha de recomeçar.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
+    <div class="passo" id="passo-final16">
+      <h2>FIM 16 — O Abismo da Dúvida</h2>
+      <p>Buscar respostas demais desfaz fronteiras. Você não sabe mais quem era, nem quem salvou — só restou dúvida líquida.</p>
+      <button onclick="location.reload()">Recomeçar</button>
+    </div>
+
   </main>
 
   <script src="./main.js"></script>

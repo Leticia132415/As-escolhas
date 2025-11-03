@@ -4,7 +4,12 @@ avanca.forEach(button => {
   button.addEventListener("click", function() {
     const atual = document.querySelector(".ativo");
     const proximoPasso = "passo-" + this.getAttribute("data-proximo");
-    atual.classList.remove("ativo");
-    document.getElementById(proximoPasso).classList.add("ativo");
+    if (atual) atual.classList.remove("ativo");
+    const proximo = document.getElementById(proximoPasso);
+    if (proximo) {
+      proximo.classList.add("ativo");
+    } else {
+      console.error("Passo não encontrado:", proximoPasso);
+    }
   });
 });
